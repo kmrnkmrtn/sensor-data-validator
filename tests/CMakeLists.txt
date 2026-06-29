@@ -11,12 +11,15 @@ add_executable(unit_tests
   test_smoke.cpp
   test_csv_parser.cpp
   ${CMAKE_SOURCE_DIR}/src/CsvParser.cpp
+  ${CMAKE_SOURCE_DIR}/src/ThresholdChecker.cpp
+  test_threshold_checker.cpp
 )
 
 target_include_directories(unit_tests PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
 target_compile_definitions(unit_tests PRIVATE
     TEST_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/test_data/"
+
 )
 
 target_link_libraries(unit_tests

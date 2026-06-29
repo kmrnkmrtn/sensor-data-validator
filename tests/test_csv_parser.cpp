@@ -25,7 +25,7 @@ TEST(CsvParserTest, ParseesFileWithHeader) {
 }
 
 TEST(CsvParserTest, ThrowsOnMalformedLine) {
-    std::string badLine = "1,5,540.2";  // csak 3 mező, kellene 7
+    std::string badLine = "1,5,540.2";  
 
     EXPECT_THROW(CsvParser::parseLine(badLine), std::runtime_error);
 }
