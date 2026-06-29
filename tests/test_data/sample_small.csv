@@ -1,0 +1,3 @@
+unit_id,cycle,t_turbine_exit,p_compressor_out,fan_speed_rpm,fuel_flow_ratio,vibration
+1,1,540.0,185.0,2388.0,0.520,0.10
+1,2,541.0,184.5,2387.0,0.522,0.11
